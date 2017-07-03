@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>mvmc</id>
+    <title>Microsoft Virtual Machine Converter</title>
+    <version>3.1.20170703</version>
+    <authors>Microsoft</authors>
+    <owners>Marcin Bojko</owners>
+    <summary>Convert virtual machines and disks from VMware hosts to Hyper-V hosts and Windows Azure or convert computers and disks to Hyper-V hosts.</summary>
+    <description>
 # Microsoft Virtual Machine Converter
 
 ## Description
@@ -61,3 +73,23 @@ or
 mvmc:
   ensure: latest
 ```
+
+    </description>
+    <projectUrl>https://technet.microsoft.com/en-us/library/dn873998.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/marcinbojko/mvmc</packageSourceUrl>
+    <docsUrl>https://technet.microsoft.com/en-us/library/dn873998.aspx</docsUrl>
+    <iconUrl>https://dl.dropboxusercontent.com/u/6066664/choco/logo/microsoft.png</iconUrl>
+    <bugTrackerUrl>https://forums.iis.net/1144.aspx</bugTrackerUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <mailingListUrl></mailingListUrl>-->
+    <tags>microsoft virtual machine converter hyper-v vmware admin</tags>
+    <copyright>Microsoft</copyright>
+    <licenseUrl>https://technet.microsoft.com/en-us/library/dn873998.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/</releaseNotes>
+  </metadata>
+    <files>
+      <file src="tools\**" target="tools" />
+      <file src="icons\**" target="icons" />
+    </files>
+</package>
